@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:assets_audio_player/assets_audio_player.dart';
-import 'package:media_player_app/screens/provider/home_provider.dart';
+import 'package:media_player_app/routes/appRoutes.dart';
+import 'package:media_player_app/screens/home/provider/home_provider.dart';
 import 'package:provider/provider.dart';
 
-class AudioPlayerScreen extends StatefulWidget {
-  AudioPlayerScreen({super.key});
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
 
   @override
-  _AudioPlayerScreenState createState() => _AudioPlayerScreenState();
+  _HomeScreenState createState() => _HomeScreenState();
 }
 
-class _AudioPlayerScreenState extends State<AudioPlayerScreen> {
+class _HomeScreenState extends State<HomeScreen> {
   late HomeProvider provider;
   final AssetsAudioPlayer audioPlayer = AssetsAudioPlayer();
 
@@ -116,7 +117,7 @@ class _AudioPlayerScreenState extends State<AudioPlayerScreen> {
                         style: TextStyle(color: Colors.grey[400], fontSize: 14),
                       ),
                       trailing: IconButton(
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.play_arrow,
                           color: Colors.green,
                         ),
@@ -165,7 +166,7 @@ class _AudioPlayerScreenState extends State<AudioPlayerScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 IconButton(
-                  icon: Icon(Icons.skip_previous, color: Colors.white),
+                  icon: const Icon(Icons.skip_previous, color: Colors.white),
                   iconSize: 40,
                   onPressed: _previousSong,
                 ),
@@ -185,7 +186,7 @@ class _AudioPlayerScreenState extends State<AudioPlayerScreen> {
                   },
                 ),
                 IconButton(
-                  icon: Icon(Icons.skip_next, color: Colors.white),
+                  icon: const Icon(Icons.skip_next, color: Colors.white),
                   iconSize: 40,
                   onPressed: _nextSong,
                 ),
@@ -194,6 +195,12 @@ class _AudioPlayerScreenState extends State<AudioPlayerScreen> {
             const SizedBox(height: 20),
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.of(context).pushNamed(AppRoutes.music);
+        },
+        child: Text("Enter"),
       ),
     );
   }

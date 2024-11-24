@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:media_player_app/routes/appRoutes.dart';
-import 'package:media_player_app/screens/provider/home_provider.dart';
+import 'package:media_player_app/screens/home/provider/home_provider.dart';
 import 'package:provider/provider.dart';
 
 void main() {
