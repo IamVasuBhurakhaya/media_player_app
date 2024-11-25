@@ -9,8 +9,8 @@ class AppRoutes {
   static const String video = "video_screen";
 
   static Map<String, WidgetBuilder> routes = {
-    home: (context) => const HomeScreen(),
-    music: (context) => MusicScreen(),
+    home: (context) => const HomePage(),
+    music: (context) => const MusicPage(),
     video: (context) => const VideoScreen(),
   };
 }
