@@ -39,6 +39,11 @@ dependencies:
   provider: ^6.1.2
   sleek_circular_slider: ^2.0.1
   google_fonts: ^6.2.1
+  flutter_lyric: ^2.0.4+6
+  cached_network_image: ^3.3.1
+  video_player: ^2.9.2
+  chewie: ^1.8.5
+  carousel_slider: ^5.0.0
 
 dev_dependencies:
   flutter_test:

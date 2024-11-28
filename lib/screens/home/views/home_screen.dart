@@ -13,6 +13,13 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Music Player'),
+        actions: [
+          IconButton(
+              onPressed: () {
+                Navigator.of(context).pushNamed(AppRoutes.video);
+              },
+              icon: const Icon(Icons.video_call))
+        ],
       ),
       body: ListView.builder(
         itemCount: watch.musicList.length,
@@ -28,7 +35,7 @@ class HomePage extends StatelessWidget {
               contentPadding: const EdgeInsets.all(10),
               leading: CircleAvatar(
                 radius: 30,
-                backgroundImage: NetworkImage(song.Singerimage ?? ""),
+                backgroundImage: NetworkImage(song.singerImage ?? ""),
               ),
               title: Text(song.title ?? "Unknown Title"),
               // trailing: IconButton(
