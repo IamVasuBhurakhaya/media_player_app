@@ -144,7 +144,6 @@ class MusicPage extends StatelessWidget {
                 ),
               ],
             ),
-            // Song List
             Expanded(
               child: ListView.builder(
                 itemCount: watch.musicList.length,
