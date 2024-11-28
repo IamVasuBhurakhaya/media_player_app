@@ -232,22 +232,6 @@ class HomeProvider extends ChangeNotifier {
     ),
   ];
 
-  HomeProvider() {
-    initListeners();
-  }
-
-  void initListeners() {
-    audioPlayer.currentPosition.listen((position) {
-      liveDuration = position;
-      notifyListeners();
-    });
-
-    audioPlayer.current.listen((playing) {
-      totalDuration = playing?.audio.duration ?? Duration.zero;
-      notifyListeners();
-    });
-  }
-
   void playOrPause() {
     if (audioPlayer.isPlaying.value) {
       audioPlayer.pause();
@@ -292,6 +276,22 @@ class HomeProvider extends ChangeNotifier {
     audioPlayer.seek(position);
     notifyListeners();
   }
+
+   // HomeProvider() {
+  //   initListeners();
+  // }
+
+  // void initListeners() {
+  //   audioPlayer.currentPosition.listen((position) {
+  //     liveDuration = position;
+  //     notifyListeners();
+  //   });
+
+  //   audioPlayer.current.listen((playing) {
+  //     totalDuration = playing?.audio.duration ?? Duration.zero;
+  //     notifyListeners();
+  //   });
+  // }
 
 // void initPlayer() {
 //   audioPlayer.open(
