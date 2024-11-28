@@ -9,54 +9,6 @@ class HomeProvider extends ChangeNotifier {
 
   Duration liveDuration = const Duration(seconds: 0);
   Duration totalDuration = const Duration(seconds: 0);
-//list of song
-  // List<Audio> audioLink = [
-  //   Audio.network(
-  //       "https://pagalfree.com/musics/128-Aayi Nai - Stree 2 128 Kbps.mp3"),
-  //   Audio.network(
-  //       "https://pagalfree.com/musics/128-Bhool Bhulaiyaa 3 - Title Track (Feat. Pitbull) - Bhool Bhulaiyaa 3 128 Kbps.mp3"),
-  //   Audio.network(
-  //       "https://pagalfree.com/musics/128-Aaj Ki Raat - Stree 2 128 Kbps.mp3"),
-  //   Audio.network(
-  //       "https://pagalfree.com/musics/128-Angaaron - Pushpa 2 The Rule 128 Kbps.mp3"),
-  //   Audio.network(
-  //       "https://pagalfree.com/musics/128-Lutt Putt Gaya - Dunki 128 Kbps.mp3"),
-  //   Audio.network(
-  //       "https://pagalfree.com/musics/128-Matargashti - Tamasha 128 Kbps.mp3"),
-  //   Audio.network(
-  //       "https://pagalfree.com/musics/128-Dhoom Taana - Om Shanti Om 128 Kbps.mp3"),
-  //   Audio.network(
-  //       "https://pagalfree.com/musics/128-Mast Magan - 2 States 128 Kbps.mp3"),
-  //   Audio.network(
-  //       "https://pagalfree.com/musics/128-Ishq Di Baajiyaan - Soorma 128 Kbps.mp3"),
-  //   Audio.network(
-  //       "https://pagalfree.com/musics/128-Ilahi - Yeh Jawaani Hai Deewani 128 Kbps.mp3"),
-  //   Audio.network(
-  //       "https://pagalfree.com/musics/128-Ghagra - Yeh Jawaani Hai Deewani 128 Kbps.mp3"),
-  //   Audio.network(
-  //       "https://pagalfree.com/musics/128-Dilliwaali Girlfriend - Yeh Jawaani Hai Deewani 128 Kbps.mp3"),
-  //   Audio.network(
-  //       "https://pagalfree.com/musics/128-Balam Pichkari - Yeh Jawaani Hai Deewani 128 Kbps.mp3"),
-  //   Audio.network(
-  //       "https://pagalfree.com/musics/128-London Thumakda - Queen 128 Kbps.mp3"),
-  //   Audio.network(
-  //       "https://pagalfree.com/musics/128-Ranjha (Queen) - Queen 128 Kbps.mp3"),
-  //   Audio.network(
-  //       "https://pagalfree.com/musics/128-Nadaan Parindey - Rockstar 128 Kbps.mp3"),
-  //   Audio.network(
-  //       "https://pagalfree.com/musics/128-Phir Se Ud Chala - Rockstar 128 Kbps.mp3"),
-  //   Audio.network(
-  //       "https://pagalfree.com/musics/128-Kabira - Yeh Jawaani Hai Deewani 128 Kbps.mp3"),
-  // ];
-
-  // void initPlayer() {
-  //   audioPlayer.open(
-  //     Audio.network(
-  //         "https://pagalfree.com/musics/128-Singham Again Title Track - Singham Again 128 Kbps.mp3"),
-  //     autoStart: true,
-  //     showNotification: true,
-  //   );
-  // }
 
   List<MusicModel> musicList = [
     MusicModel(
@@ -199,7 +151,7 @@ class HomeProvider extends ChangeNotifier {
       totalD: '5:04',
       singerName: 'Vishal Dadlani',
       musicImage:
-          'https://pagalfree.com/images/128Ilahi - Yeh Jawaani Hai Deewani 128 Kbps.jpg',
+          'https://pagalfree.com/images/128Ghagra - Yeh Jawaani Hai Deewani 128 Kbps.jpg',
     ),
     MusicModel(
       title: 'Dilliwaali Girlfriend',
@@ -251,9 +203,10 @@ class HomeProvider extends ChangeNotifier {
           'https://pagalfree.com/musics/128-Nadaan Parindey - Rockstar 128 Kbps.mp3',
       singerImage:
           'https://i.pinimg.com/736x/8a/33/7e/8a337e8142145d98801ea4a5700d60fb.jpg',
-      totalD: '',
-      singerName: '',
-      musicImage: '',
+      totalD: '6:26',
+      singerName: 'A.R. Rahman',
+      musicImage:
+          'https://pagalfree.com/images/128Nadaan Parindey - Rockstar 128 Kbps.jpg',
     ),
     MusicModel(
       title: 'Phir Se Ud Chala ',
@@ -261,9 +214,10 @@ class HomeProvider extends ChangeNotifier {
           'https://pagalfree.com/musics/128-Phir Se Ud Chala - Rockstar 128 Kbps.mp3',
       singerImage:
           'https://blackhattalent.com/wp-content/uploads/2023/07/Mohit-Chauhan.jpg',
-      totalD: '',
-      singerName: '',
-      musicImage: '',
+      totalD: '4:31',
+      singerName: 'Mohit Chauhan',
+      musicImage:
+          'https://pagalfree.com/images/128Phir Se Ud Chala - Rockstar 128 Kbps.jpg',
     ),
     MusicModel(
       title: 'Kabira',
@@ -271,9 +225,10 @@ class HomeProvider extends ChangeNotifier {
           'https://pagalfree.com/musics/128-Kabira - Yeh Jawaani Hai Deewani 128 Kbps.mp3',
       singerImage:
           'https://i1.sndcdn.com/artworks-000109706851-qi28va-t500x500.jpg',
-      totalD: '',
-      singerName: '',
-      musicImage: '',
+      totalD: '3:44',
+      singerName: 'Rekha Bhardwaj',
+      musicImage:
+          'https://pagalfree.com/images/128Kabira - Yeh Jawaani Hai Deewani 128 Kbps.jpg',
     ),
   ];
 
@@ -293,17 +248,6 @@ class HomeProvider extends ChangeNotifier {
     });
   }
 
-  // void initPlayer() {
-  //   audioPlayer.open(
-  //     Playlist(
-  //       audios: audioLink,
-  //       startIndex: 0,
-  //     ),
-  //     showNotification: true,
-  //     autoStart: true,
-  //   );
-  // }
-  //
   void playOrPause() {
     if (audioPlayer.isPlaying.value) {
       audioPlayer.pause();
@@ -332,36 +276,6 @@ class HomeProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  void getMusicDuration() {
-    audioPlayer.current.listen((event) {
-      totalDuration = event!.audio.duration;
-      notifyListeners();
-    });
-  }
-
-  void getLiveDuration() {
-    audioPlayer.currentPosition.listen((event) {
-      liveDuration = event;
-      notifyListeners();
-    });
-  }
-
-  // void seekMusic(Duration d1) {
-  //   audioPlayer.seek(d1);
-  // }
-  //
-  // void previousSong() {
-  //   isPlay = true;
-  //   audioPlayer.previous();
-  //   notifyListeners();
-  // }
-  //
-  // void nextSong() {
-  //   isPlay = true;
-  //   audioPlayer.next();
-  //   notifyListeners();
-  // }
-
   void nextSong() {
     currentIndex = (currentIndex + 1) % musicList.length;
     playSong(currentIndex);
@@ -378,4 +292,45 @@ class HomeProvider extends ChangeNotifier {
     audioPlayer.seek(position);
     notifyListeners();
   }
+
+// void initPlayer() {
+//   audioPlayer.open(
+//     Playlist(
+//       audios: audioLink,
+//       startIndex: 0,
+//     ),
+//     showNotification: true,
+//     autoStart: true,
+//   );
+// }
+
+// void seekMusic(Duration d1) {
+//   audioPlayer.seek(d1);
+// }
+//
+// void previousSong() {
+//   isPlay = true;
+//   audioPlayer.previous();
+//   notifyListeners();
+// }
+//
+// void nextSong() {
+//   isPlay = true;
+//   audioPlayer.next();
+//   notifyListeners();
+// }
+
+// void getMusicDuration() {
+//   audioPlayer.current.listen((event) {
+//     totalDuration = event!.audio.duration;
+//     notifyListeners();
+//   });
+// }
+//
+// void getLiveDuration() {
+//   audioPlayer.currentPosition.listen((event) {
+//     liveDuration = event;
+//     notifyListeners();
+//   });
+// }
 }

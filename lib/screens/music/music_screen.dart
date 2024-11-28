@@ -57,7 +57,6 @@ class MusicPage extends StatelessWidget {
         width: double.infinity,
         child: Column(
           children: [
-            // Image container and circular slider
             Stack(
               clipBehavior: Clip.none,
               children: [
@@ -100,7 +99,7 @@ class MusicPage extends StatelessWidget {
                       ),
                       const SizedBox(height: 15),
                       Text(
-                        "Artist Name", // Replace with actual artist name
+                        "Artist Name",
                         style: GoogleFonts.lato(
                           color: Colors.white,
                           fontSize: 14,
@@ -170,7 +169,7 @@ class MusicPage extends StatelessWidget {
                             ),
                           ),
                           Text(
-                            "${(watch.totalDuration.inSeconds / 60).toInt()}:${(watch.totalDuration.inSeconds % 60).toInt()}",
+                            "${(watch.musicList[index].totalD)}",
                             style: GoogleFonts.lato(
                               textStyle: TextStyle(
                                 color: index == watch.currentIndex
@@ -201,7 +200,7 @@ class MusicPage extends StatelessWidget {
               InkWell(
                 child: const Icon(Icons.shuffle),
                 onTap: () {
-                  // read.shuffle();
+                  watch.musicList.shuffle();
                 },
               ),
               Row(
@@ -247,8 +246,10 @@ class MusicPage extends StatelessWidget {
                 ],
               ),
               InkWell(
-                child: const Icon(Icons.toc),
-                onTap: () {},
+                child: const Icon(Icons.repeat_one),
+                onTap: () {
+                  watch.playSong(watch.currentIndex);
+                },
               ),
             ],
           ),
