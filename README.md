@@ -35,7 +35,15 @@
 
 ## Screenshots
 
-(Include a series of screenshots that show the app's interface, such as the music player screen, video player screen, and navigation tabs.)
+<img src="https://github.com/user-attachments/assets/16983ae3-45c9-4d0e-8bbe-4aa93ded2374" height=450 width=300>
+<img src="https://github.com/user-attachments/assets/d0d60cdb-887f-4555-b08c-c9d7a0c43693" height=450 width=300>
+<img src="https://github.com/user-attachments/assets/ec45fb9e-8001-4be7-bcd0-f85da2667691" height=450 width=300>
+<img src="https://github.com/user-attachments/assets/b5985909-7306-4d8b-bb68-a5429bfe7e11" height=450 width=300>
+
+
+https://github.com/user-attachments/assets/ba10615b-b5b2-46a9-94a5-cb72f7663dcc
+
+
 
 ## Installation
 
@@ -52,4 +60,11 @@ Ensure you have the following installed before running the app:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/media_booster.git
+   git clone https://github.com/IamVasuBhurakhaya/media_player.git
+
+
+   
+
+https://github.com/user-attachments/assets/ca2b2968-a3c7-4120-8dea-fb9d565d648f
+
+
